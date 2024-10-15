@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Pals Adoption Center</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Pet Pals</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Available Pets</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Find Your New Best Friend</h2>
+            <p>Adopt a pet and give them a loving home.</p>
+            <a href="#available-pets" class="btn">See Available Pets</a>
+        </div>
+    </section>
+
+    <!-- Available Pets Section with Filter Buttons -->
+    <section id="available-pets">
+        <div class="container">
+            <h2>Available Pets for Adoption</h2>
+
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button data-filter="all">All</button>
+                <button data-filter="dog">Dogs</button>
+                <button data-filter="cat">Cats</button>
+            </div>
+
+            <!-- Pets Grid -->
+            <div class="pets-grid">
+                <div class="pet-card" data-category="dog">
+                    <img src="/images/gold.jpeg" alt="Buddy">
+                    <h3>Buddy</h3>
+                    <p>Golden Retriever, 2 years old</p>
+                    <button>Adopt</button>
+                </div>
+                <div class="pet-card" data-category="cat">
+                    <img src="/images/cat.jpeg" alt="Whiskers">
+                    <h3>Whiskers</h3>
+                    <p>Tabby Cat, 1 year old</p>
+                    <button>Adopt</button>
+                </div>
+                <div class="pet-card" data-category="dog">
+                    <img src="/images/labrador.jpeg" alt="Max">
+                    <h3>Max</h3>
+                    <p>Labrador, 3 years old</p>
+                    <button>Adopt</button>
+                </div>
+                <div class="pet-card" data-category="cat">
+                    <img src="/images/persiancat.jpeg" alt="Misty">
+                    <h3>Misty</h3>
+                    <p>Persian Cat, 2 years old</p>
+                    <button>Adopt</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" rows="4" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Pet Pals Adoption Center. All Rights Reserved.</p>
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
